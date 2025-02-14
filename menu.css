@@ -1,0 +1,173 @@
+/* General Page Styling */
+.menu-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Stylish Menu Heading */
+.menu-container h1 {
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Menu Grid Layout */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Individual Menu Cards */
+.menu-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Images - Full Fit */
+.menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-card:hover .menu-image {
+    transform: scale(1.1);
+}
+
+/* Food Name Styling */
+.menu-card h2 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* Price Styling */
+.menu-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-top: 10px;
+}
+
+/* Stylish Footer - Fixed at Bottom */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .menu-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .menu-price {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 30px;
+    }
+
+    .menu-container h1 {
+        font-size: 2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .menu-card {
+        padding: 20px;
+    }
+
+    .menu-image {
+        height: 180px;
+    }
+
+    .menu-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .menu-price {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        padding: 20px;
+    }
+
+    .menu-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .menu-card {
+        padding: 15px;
+    }
+
+    .menu-image {
+        height: 160px;
+    }
+
+    .menu-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu-price {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}

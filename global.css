@@ -1,0 +1,63 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Ledger', serif;
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  position: relative;
+}
+
+/* Background Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/Reataurant_mainpage_background_image.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* Ensure HTML takes full height */
+html {
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  body {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  body::before {
+      background-attachment: scroll; /* Fix background issue on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+}

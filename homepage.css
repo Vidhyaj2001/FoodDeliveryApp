@@ -1,0 +1,182 @@
+/* App wrapper styling */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+    font-family: 'Ledger', serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header styling */
+header {
+    background-color: #b8ebf1;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+/* Hero Section Styling */
+.hero-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+}
+
+/* Background Image */
+.hero-background {
+    background-image: url('../assets/images/Reataurant_mainpage_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    filter: blur(3px);
+    opacity: 0.7;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    font-weight: normal;
+    max-width: 90%;
+}
+
+/* Heading & Paragraph Styling */
+.hero-content h2,
+.hero-content h1,
+.hero-content p {
+    text-shadow: none;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-content h1 span {
+    color: #FFD700;
+}
+
+.hero-content p {
+    font-size: 22px;
+    color: white;
+}
+
+.hero-content p .highlight-percent {
+    color: #FFD700;
+    font-size: 36px;
+}
+
+/* Button Styling */
+.explore-button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.explore-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-wrapper {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .explore-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-wrapper {
+        height: 45vh;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .explore-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

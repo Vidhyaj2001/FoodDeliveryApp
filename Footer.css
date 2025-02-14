@@ -1,0 +1,57 @@
+/* Footer Styling */
+footer {
+    background-color: hsl(212, 68%, 76%) !important; 
+  
+    color: black !important; /* Black text */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding for spacing */
+    height: auto; /* Dynamic height based on content */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    font-weight: normal; /* Normal font weight */
+    position: relative;
+    z-index: 10;
+    width: 100%; /* Ensure footer spans full width */
+    flex-direction: column;
+}
+
+/* Footer Paragraph Styling */
+footer p {
+    font-size: 20px; /* Larger font size */
+    font-weight: normal; /* Normal font weight */
+    margin: 5px 0; /* Reduce margin for better spacing */
+    padding: 0 10px; /* Add padding for better responsiveness */
+    text-align: center;
+    word-wrap: break-word; /* Prevent overflow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    footer p {
+        font-size: 18px; /* Slightly smaller font */
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack content for small screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    footer p {
+        font-size: 16px; /* Smaller font size for mobile */
+        line-height: 1.4; /* Adjust line height */
+    }
+}
+
+@media (max-width: 480px) {
+    footer p {
+        font-size: 14px; /* Further reduce font size for very small screens */
+        padding: 5px; /* Less padding */
+    }
+}

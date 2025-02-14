@@ -1,0 +1,170 @@
+/* Hero Section */
+.hero1 {
+    background-image: url('../assets/images/Reataurant_mainpage_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Content Section */
+.about-content {
+    max-width: 50%;
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styles */
+.image1, .image2 {
+    position: absolute;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image1 {
+    top: 120px;
+    left: -50px;
+}
+
+.image2 {
+    top: 0;
+    left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .image-container {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .image1 {
+        top: 100px;
+        left: -20px;
+    }
+
+    .image2 {
+        top: 0;
+        left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero1 {
+        height: 50vh;
+        padding: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image1 {
+        top: 80px;
+        left: -10px;
+    }
+
+    .image2 {
+        top: 0;
+        left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero1 {
+        height: 40vh;
+        font-size: 14px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .image1 {
+        top: 60px;
+        left: 0;
+    }
+
+    .image2 {
+        top: 0;
+        left: 0;
+    }
+}

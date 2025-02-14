@@ -1,0 +1,219 @@
+/* Hero Section Styling */
+.hero-wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+    height: 85vh; /* Full height of the viewport */
+    padding: 20px;
+}
+
+/* Background Image */
+.hero-background {
+    background-image: url('../assets/images/Reataurant_mainpage_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    filter: blur(3px);
+    opacity: 0.7;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px); /* Adjust to fit within header and footer */
+}
+
+/* Form Container */
+.form-container {
+    width: 90%; /* Adaptive for smaller screens */
+    max-width: 450px; /* Ensures proper width on larger screens */
+    background-color: rgba(86, 161, 231, 0.95); /* Increased opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: black;
+    text-align: center;
+}
+
+/* Form Labels */
+.form-container label {
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Form Inputs */
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: black;
+}
+
+/* Form Button */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+    background-color: #222;
+}
+
+/* Toggle Form Button */
+.toggle-form-btn {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 50px;
+    margin-top: auto; /* Ensure it sticks to the bottom */
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .hero-content {
+        padding: 15px;
+    }
+
+    .form-container {
+        max-width: 400px;
+        padding: 18px;
+    }
+
+    .form-container label {
+        font-size: 18px;
+    }
+
+    .form-container input,
+    .form-container button {
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    .toggle-form-btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-wrapper {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        height: auto;
+    }
+
+    .form-container {
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .form-container label {
+        font-size: 16px;
+    }
+
+    .form-container input,
+    .form-container button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .toggle-form-btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-wrapper {
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .form-container {
+        max-width: 300px;
+        padding: 12px;
+    }
+
+    .form-container label {
+        font-size: 15px;
+    }
+
+    .form-container input,
+    .form-container button {
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .toggle-form-btn {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
